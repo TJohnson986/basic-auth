@@ -2,7 +2,7 @@
 
 const { users } = require('../models/index.js');
 
-module.export = async (req, res, next) => {
+module.exports = async (req, res, next) => {
   let bearerHeaderParts = req.headers.authorization.split(' ');
   let token = bearerHeaderParts.pop();
 
